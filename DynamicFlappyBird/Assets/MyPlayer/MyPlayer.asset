@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2093222b7db878e42808d091f0bd6043, type: 3}
+  m_Name: MyPlayer
+  m_EditorClassIdentifier: 
+  artWork: {fileID: 21300000, guid: 5bfdb405cb434f048bd43e7f400c5878, type: 3}
+  jump: {fileID: 8300000, guid: c79a874c43370de48a4f2c0fe6d27736, type: 3}
+  dead: {fileID: 8300000, guid: 2ed40961c980adc47b7ab562675fabf8, type: 3}
+  atTheHit: {fileID: 8300000, guid: 0ff07e9a0e27a1249844e6c37e509435, type: 3}
