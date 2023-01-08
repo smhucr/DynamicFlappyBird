@@ -10,6 +10,8 @@ public class PipeCollide : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             GameManager.instance.GameOver();
+
+            GameManager.instance.soundController.audioSource.PlayOneShot(GameManager.instance.soundController.clips[1]);
         }
     }
 

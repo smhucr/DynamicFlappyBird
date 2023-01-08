@@ -9,6 +9,8 @@ public class PipeScore : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             GameManager.instance.score.text = (int.Parse(GameManager.instance.score.text) + 1).ToString();
+
+            GameManager.instance.soundController.audioSource.PlayOneShot(GameManager.instance.soundController.clips[3]);
         }
     }
 }

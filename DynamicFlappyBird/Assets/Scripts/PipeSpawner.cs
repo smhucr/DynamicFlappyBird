@@ -7,14 +7,14 @@ public class PipeSpawner : MonoBehaviour
     [SerializeField] public ObjectsPool objectsPool;
     [SerializeField] public Transform player;
 
-    private void Start()
+    public void StartGame()
     {
         StartCoroutine(PipeSpawnStart(0));
     }
     public IEnumerator PipeSpawnStart(int objectType)
     {
         var pipe = objectsPool.GetPooledObject(objectType);
-        pipe.transform.position = player.transform.position + new Vector3(4, Random.Range(-0.2f, 1.5f), 0);
+        pipe.transform.position = player.transform.position + new Vector3(4, Random.Range(-0.2f, 1.5f), 1);
         yield return new WaitForSeconds(3);
         if (!GameManager.instance.endGame)
             StartCoroutine(PipeSpawnStart(objectType));
