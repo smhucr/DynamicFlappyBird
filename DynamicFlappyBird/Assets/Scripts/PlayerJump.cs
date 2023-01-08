@@ -12,7 +12,7 @@ public class PlayerJump : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !GameManager.instance.endGame)
         {
             myRigid.velocity = Vector2.zero;
             myRigid.AddForce(jumping);
