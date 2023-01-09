@@ -11,7 +11,7 @@ public class PipeCollide : MonoBehaviour
         {
             GameManager.instance.GameOver();
 
-            GameManager.instance.soundController.audioSource.PlayOneShot(GameManager.instance.soundController.clips[1]);
+            GameManager.instance.audioSource.PlayOneShot(GameManager.instance.scriptablePlayer.clips[1]);
         }
     }
 

@@ -6,9 +6,6 @@ using UnityEngine;
 public class Player : ScriptableObject
 {
     public Sprite artWork;
-    public AudioClip jump;
-    public AudioClip dead;
-    public AudioClip atTheHit;
-
+    public AudioClip[] clips;
 
 }

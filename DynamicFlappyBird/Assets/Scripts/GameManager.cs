@@ -13,11 +13,16 @@ public class GameManager : MonoBehaviour
     public GameObject objectPool;
     public GameObject player;
     public GameObject gameOverScreen;
-    public SoundController soundController;
+    public Player scriptablePlayer;
+    public AudioSource audioSource;
     private void MakeInstance()
     {
         if (instance == null)
             instance = this;
+    }
+    private void Start()
+    {
+        player.GetComponent<SpriteRenderer>().sprite = scriptablePlayer.artWork;
     }
     private void Awake()
     {
@@ -39,7 +44,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.6f);
         gameOverScreen.SetActive(true);
-        GameManager.instance.soundController.audioSource.PlayOneShot(GameManager.instance.soundController.clips[2]);
+        GameManager.instance.audioSource.PlayOneShot(GameManager.instance.scriptablePlayer.clips[2]);
     }
     private void OnMouseDown()
     {

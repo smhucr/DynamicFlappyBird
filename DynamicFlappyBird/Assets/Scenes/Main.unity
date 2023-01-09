@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 21284117}
   - component: {fileID: 21284118}
   - component: {fileID: 21284119}
-  - component: {fileID: 21284120}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -175,7 +174,8 @@ MonoBehaviour:
   objectPool: {fileID: 1972507578}
   player: {fileID: 1011613035}
   gameOverScreen: {fileID: 1564581156}
-  soundController: {fileID: 21284120}
+  scriptablePlayer: {fileID: 11400000, guid: 10d2ca397a0db19459c12c4a3bc6be83, type: 2}
+  audioSource: {fileID: 1011613041}
 --- !u!65 &21284119
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -189,24 +189,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.01, y: 5.96, z: 0.56}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &21284120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 21284116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe70ebfa7f492b348ac16f4b72acdcf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clips:
-  - {fileID: 8300000, guid: c79a874c43370de48a4f2c0fe6d27736, type: 3}
-  - {fileID: 8300000, guid: 0ff07e9a0e27a1249844e6c37e509435, type: 3}
-  - {fileID: 8300000, guid: 2ed40961c980adc47b7ab562675fabf8, type: 3}
-  - {fileID: 8300000, guid: 9b4cc153a17670748bf4d0405da6cead, type: 3}
-  audioSource: {fileID: 1011613041}
 --- !u!1 &44350118
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,7 +733,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 744861919}
-  - component: {fileID: 744861920}
   - component: {fileID: 744861921}
   m_Layer: 0
   m_Name: Player
@@ -780,20 +761,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &744861920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 744861918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c236ab168303514c91e40ef539ffd84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 11400000, guid: 10d2ca397a0db19459c12c4a3bc6be83, type: 2}
-  artWork: {fileID: 1011613035}
 --- !u!114 &744861921
 MonoBehaviour:
   m_ObjectHideFlags: 0

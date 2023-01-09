@@ -17,7 +17,7 @@ public class PlayerJump : MonoBehaviour
             myRigid.velocity = Vector2.zero;
             myRigid.AddForce(jumping);
 
-            GameManager.instance.soundController.audioSource.PlayOneShot(GameManager.instance.soundController.clips[0]);
+            GameManager.instance.audioSource.PlayOneShot(GameManager.instance.scriptablePlayer.clips[0]);
         }
     }
 

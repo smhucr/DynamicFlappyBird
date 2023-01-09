@@ -10,7 +10,7 @@ public class PipeScore : MonoBehaviour
         {
             GameManager.instance.score.text = (int.Parse(GameManager.instance.score.text) + 1).ToString();
 
-            GameManager.instance.soundController.audioSource.PlayOneShot(GameManager.instance.soundController.clips[3]);
+            GameManager.instance.audioSource.PlayOneShot(GameManager.instance.scriptablePlayer.clips[3]);
         }
     }
 }
