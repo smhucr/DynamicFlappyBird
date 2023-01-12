@@ -1,3 +1,3 @@
 # DynamicFlappyBird
 
-<img src="DynamicFlappyBird/DynamicFlappyBird/Assets/flappy-bird-assets-master/sprites/1.png" width = "380" height = "310" >
+<img src="DynamicFlappyBird/DynamicFlappyBird/Assets/flappy-bird-assets-master/sprites/background-day.png" width = "380" height = "310" >
