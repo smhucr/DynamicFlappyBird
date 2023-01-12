@@ -174,7 +174,7 @@ MonoBehaviour:
   objectPool: {fileID: 1972507578}
   player: {fileID: 1011613035}
   gameOverScreen: {fileID: 1564581156}
-  scriptablePlayer: {fileID: 11400000, guid: 10d2ca397a0db19459c12c4a3bc6be83, type: 2}
+  scriptablePlayer: {fileID: 11400000, guid: e242b28d14d756c43b8d69438dbae366, type: 2}
   audioSource: {fileID: 1011613041}
 --- !u!65 &21284119
 BoxCollider:
